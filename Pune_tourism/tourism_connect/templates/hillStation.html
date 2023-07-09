@@ -1,0 +1,333 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+    <title>Religious</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b71d1092b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="religious-body">
+    {% block content %}
+    <div>
+      <h1 class="religious-title">Hill Stations</h1>
+    </div>
+
+    <div class="wrapper" align="center">
+      <div id="authorContainer" class="author-container">
+        <div type="button" class="vertical-line" onclick="showYear1()">
+          Mahabaleshwar
+        </div>
+        <div id="year1">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  A hill town in the Western Ghats is called Mahabaleshwar.
+                  Mahabaleshwar is highly known for its various rivers,
+                  spectacular cascades, and breathtaking peaks in addition to
+                  its strawberries. This evergreen forest attracts nature
+                  lovers.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: July-September.</p>
+                <p>
+                  Places to Visit: Pratapgarh Fort,Panch Ganga Temple,Mapro
+                  garden,veena lake,elephant's head point
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Mahabaleshwar.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear2()">
+          Lonavala
+        </div>
+        <div id="year2">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Lonavla, one of Maharashtra's most well-known hill towns, has
+                  been endowed with unparalleled natural beauty.Every type of
+                  traveller can find something to do in Lonavala, which is home
+                  to well-known tourist destinations like the Bushi Dam and
+                  Tiger's Leap Peak.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: July-September.</p>
+                <p>
+                  Places to Visit: Bhushi Dam, Tungarli Lake, Tiger’s Leap,
+                  Rajmachi Fort.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Lonavala.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear3()">
+          Lavasa
+        </div>
+        <div id="year3">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The beautifully planned city of Lavasa is surrounded by the
+                  majestic Western Ghats.This contemporary hill station is a
+                  relaxing getaway for all of its guests and has a lot to offer
+                  tourists in addition to beautiful scenery.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: Throughout the year</p>
+                <p>
+                  Places to Visit: The Promenade, Lakeshore Watersport, Tikona
+                  Fort
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Lavasa.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear4()">
+          Panchgani
+        </div>
+        <div id="year4">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Panchgani is a famous destination for its natural beauty. It
+                  is famous for its many sunsets and picturesque valley scenery.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: September-May.</p>
+                <p>
+                  Places to Visit: Table Land Viewpoint, Kamalgad Fort,
+                  Harrison’s Folly, Panchganga Mandir
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Panchgani.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear5()">
+          Tamhini ghat
+        </div>
+        <div id="year5">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Tamhini Ghat is a gorgeous mountain pass.The scenic long drives that the road affords are what really draw people to the mountain pass, which is well-known for its expansive panoramic panoramas. Additionally, the area is home to stunning cascading waterfalls.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: July-September.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Tamhini ghat.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear6()">
+          Malshej ghat
+        </div>
+        <div id="year6">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Malshej Ghat, one of the best hill towns near Pune in the winter, is well-integrated with the local natural beauties, which include picturesque sky-high waterfalls, raised slopes, and magical places.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: July-September.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Malshej ghat.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear7()">
+          Tapola
+        </div>
+        <div id="year7">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The place is covered with forests and the views of the many forests are picturesque in themselves. Tapola is the mini Kashmir of maharashtra.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit:July and August.</p>
+                <p>Places to Visit: Vasota Fort,Lingmala WaterfallKaas Pathar - Valley of Flowers</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Tapola.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear8()">
+          Khandala
+        </div>
+        <div id="year8">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Travel to Khandala to discover all that one can imagine if they want to discover the true charm of paradise. Its breathtaking natural scenery, which includes glossy valleys, stunning waterfalls, luscious foliage, and attractive ponds.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: Monsoon Season.</p>
+                <p>Places to Visit:Pavana lake,rajmachi garden,kune waterfalls.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Khandala.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear9()">
+          Matheran
+        </div>
+        <div id="year9">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The Matheran Hill Station is the ideal location to observe the sunset and sunrise as well as some breathtaking scenery that will keep you fresh. The picturesque hill station of Matheran is a pleasure for photographers.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: Throughout the year.</p>
+                <p>Places to Visit: Charlotte lake,Monkey Point,Panorama point.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Matheran.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear10()">
+          Bhandardara
+        </div>
+        <div id="year10">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Bhandardara, a hidden treasure in Maharashtra, is blessed with all the characteristics that distinguish a hill station. Tall peaks and towering dams, mighty waterfalls and serene lakes.
+                </p>
+              </div>
+              <div>
+                <p>Best time to visit: July-March.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/hillStation/Bhandardara.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+        <img class="blue-cloud5" src="{% static '/blue_cloud.png' %}" alt="blue cloud">
+      </div>
+    </div>
+
+    <script src="{% static '/js/index.js' %}"></script>
+    {% endblock %}
+    <footer class="foot" style="margin-top: 25%;">
+      <p>©PRSY</p>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- styles.css ref -->
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b71d1092b8.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+   
+   <title>Tourism Guide</title>
+  </head>
+  <body class="body">
+    {% block content %}
+    <div class="main-container">
+      <div class="col-md-12" style="padding: 0px 0px">
+        <div class="top-panel">
+          <div class="container row">
+            <a class="nav-anchor" href="#recommendation" style="z-index: 99;">Get Reccomendation</a>
+            <a class="nav-anchor" href="#exploration-id" style="z-index: 99;">Explore Places</a>
+            <a class="nav-anchor" href="#video" style="z-index: 99;">Video-Guide</a>
+          </div>
+        </div>
+        <div id="divHeadIt" align="center">
+          <div class="divHeadNew" style="margin-bottom: 0px; padding: 10px">
+            <h1 class="text-shadow" style="color: #fff">
+              Welcome to Pune's Tourism Guide!
+            </h1>
+          </div>
+        </div>
+  
+        <div
+          class="divHeadImg"
+          align="center"
+          alt="head img"
+          style="
+            background: url('https://www.sobha.com/blog/wp-content/uploads/2022/05/Best-Places-Districts-to-live-in-Kerala-2.png')
+              no-repeat scroll center center;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+    </div>
+    <!-- <img class="main_img" src="https://punetourism.co.in/images/places-to-visit/headers/shaniwar-wada-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Main page image">
+      <h1 class="main_header">Welcome to Pune's Tourism Guide!</h1>
+      <hr> -->
+
+    <!-- 1st div starts here -->
+    <img class="blue-cloud1" src="{% static '/blue_cloud.png' %}" alt="blue cloud">
+    <div class="exploration" id="exploration-id" align="center">
+      <h2 class="exploration_header">Exploration Point</h2>
+      <div class="contain_app">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="religious field">
+              <a class="field-anchor" href="/religious/">Religious</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="historical field">
+              <a class="field-anchor" href="/historical/">Historical</a>
+            </div>
+          </div>
+          <img class="blue-cloud2" src="{% static '/blue_cloud.png' %}" alt="blue cloud">
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="hillStation field">
+              <a class="field-anchor" href="/hillStation/">Hill Station</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="other field">
+              <a class="field-anchor" href="/others/">Others</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    <!-- video -->
+    <div
+      id="video"
+      style="
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+        padding-bottom: 0;
+        box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+        margin-top: 1.6em;
+        margin-bottom: 0.9em;
+        overflow: hidden;
+        border-radius: 8px;
+        will-change: transform;
+        background-color: #81cef7;
+      "
+    >
+      <iframe
+        loading="lazy"
+        style="
+          position: absolute;
+          width: 50%;
+          height: 50%;
+          top: 0;
+          left: 0;
+          border: none;
+          padding: 0;
+          margin: 0;
+          margin-top: 15%;
+          margin-left: 25%;
+        "
+        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFJKVArVqA&#x2F;watch?embed"
+        allowfullscreen="allowfullscreen"
+        allow="fullscreen"
+      >
+      </iframe>
+    </div>
+
+    <!-- ML starts here -->
+    <img class="blue-cloud3" src="{% static '/blue_cloud.png' %}" alt="blue cloud">
+    <div class="contain mb-3 py-4" id="recommendation">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Best Place Recommendation</h5>
+          <form action="/predict/" method="POST">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-sm-6">
+                <label class="form-label"><i class="fa-solid fa-filter"></i> Choice 1</label>
+                <select type="number" class="form-control" name="option1">
+                  <option value="0" name="0" type="number">Historical</option>
+                  <option value="4" name="4" type="number">Hill Station</option>
+                  <option value="2" name="2" type="number">Religious</option>
+                  <option value="6" name="6" type="number">Other Attractions</option>
+                </select>
+              </div>
+
+              <div class="col-sm-6">
+                <label class="form-label"><i class="fa-solid fa-filter"></i> Choice 2</label>
+                <select name="option2" class="form-control">
+                  <option value="1" name="1" type="number">Cultural Heritage</option>
+                  <option value="2" name="2" type="number">Religious</option>
+                  <option value="3" name="3" type="number">Trekking</option>
+                  <option value="0" name="0" type="number">Historical</option>
+                  <option value="5" name="5" type="number">Nature</option>
+                  <option value="7" name="7" type="number">Shopping</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="Submit" class="btn btn-primary"><i class="fa-solid fa-square-poll-horizontal"></i> Recommend</button>
+          </form>
+
+          {% endblock %}
+        </div>
+        {% if error %}
+        <h4 class="reccomend">Best Place for you would be: {{message}}</h4>
+        {% endif %}
+      </div>
+    </div>
+
+    <footer class="foot">
+      <p>©PRSY</p>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+    <title>Religious</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b71d1092b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="religious-body">
+    {% block content %}
+    <img class="blue-cloud5" src="{% static '/blue_cloud.png' %}" alt="blue cloud">
+    <div>
+      <h1 class="religious-title">Religious Places</h1>
+    </div>
+
+    <div class="wrapper" align="center">
+      <div id="authorContainer" class="author-container">
+        <div type="button" class="vertical-line" onclick="showYear1()">
+          Dagadusheth Halwai Ganapati Temple
+        </div>
+        <div id="year1">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The Dagadusheth Halwai Ganapati temple is a Hindu Temple
+                  located in Pune and is dedicated to the Hindu god Ganesh. The
+                  temple is visited by over hundred thousand pilgrims every
+                  year.Devotees of the temple include celebrities and chief
+                  ministers of Maharashtra who visit during the annual ten-day
+                  Ganeshotsav festival. The Temple is 130 years old. [2022]
+                </p>
+              </div>
+              <div>
+                <p>Location: Pune City.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/DagdushethTemple.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear2()">
+          Kasba Peth Ganpati Temple
+        </div>
+        <div id="year2">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The Kasba Ganapati refers to both a particular murti of the
+                  god Ganapati in Pune, India, as well as to the temple built
+                  around the murti. The Kasba Ganapati is the presiding deity
+                  (gramadevata) of Pune.
+                </p>
+              </div>
+              <div>
+                <p>Location: Kasba Peth, Pune City.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/kasba_peth_ganpati_temple.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear3()">
+          ISKCON NVCC Temple
+        </div>
+        <div id="year3">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  ISKCON New Vedic Cultural Center (NVCC), Sri Sri Radha
+                  Vrindavanchandra temple or ISKCON Pune is a Gaudiya
+                  Vaishnavism temple situated in Pune, India. The temple is
+                  dedicated to Hindu god Radha Krishna and was opened in 2013.
+                  It is the largest temple in the city of Pune.
+                </p>
+              </div>
+              <div>
+                <p>Location: Pune City.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/ISKONNVCC.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear4()">
+          Parvati Hill
+        </div>
+        <div id="year4">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The temple is the oldest heritage structure in Pune and was
+                  built during the rule of the Peshwa dynasty. Parvati Hill has
+                  5 temples atop it. The main temple, Devdeveshwara, is made of
+                  blackstone. It was completed under Balaji Baji Rao in 1749,
+                  and a gold pinnacle was added to the temple in 1760. Other
+                  temples are dedicated to Vitthal and Rukmini, Vishnu, and
+                  Kartikeya.
+                </p>
+              </div>
+              <div>
+                <p>Location: South-east part of Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Parvati.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear5()">
+          Bhimashankar Temple
+        </div>
+        <div id="year5">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The Bhimashankar Mandir is a Shiva mandir situated in its
+                  eponymous village, Bhimashankar, in Pune district of
+                  Maharashtra. It is a key pilgrimage center and one of the 12
+                  Jyotirlinga in the world.The temple's Shiva lingam is one of
+                  the five Jyotirlinga of Maharashtra.The mandir is situated on
+                  a mountain.
+                </p>
+              </div>
+              <div>
+                <p>Location: 110 kilometers away from Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Bhimashankar.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear6()">
+          Khandoba temple of Jejuri
+        </div>
+        <div id="year6">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The Khandoba temple of Jejuri is a Hindu temple dedicated to
+                  the god Khandoba, located on a hill in the town of Jejuri,
+                  Maharashtra, India. It is one of the most prominent Hindu
+                  pilgrimage centers of Maharashtra.The worship of Khandoba
+                  began in the 12th to 13th century. It was built by Yadavas in
+                  the 12th century. The Khandoba temple was rebuilt during the
+                  reign of the Peshwas.
+                </p>
+              </div>
+              <div>
+                <p>Location: 37 km from Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Jejuri_Temple.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear7()">
+          Alandi
+        </div>
+        <div id="year7">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Alandi is a well known place of pilgrimage for Hindu Marathi
+                  people because of the town's association with Dnyaneshwar. His
+                  devotees believe that he is still alive. A temple complex was
+                  built at Dnyaneshwar's samadhi and is visited by pilgrims,
+                  especially those of the Varkari sect.
+                </p>
+              </div>
+              <div>
+                <p>Location: 25 km from Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Aalandi.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear8()">
+          Dehu - Gatha Temple
+        </div>
+        <div id="year8">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  Dehu is a neighborhood in the city of Pune, India. It is known
+                  for being the abode of Sant Tukaram.The Tukaram Palakhi
+                  heading towards the town of Pandharpur originates from Dehu in
+                  the month of Ashadh.
+                </p>
+              </div>
+              <div>
+                <p>Location: 29.3 km from Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Gatha_temple.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear9()">
+          Nira Narsinhpur
+        </div>
+        <div id="year9">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The temple is situated on the Pune side of the Pune-Solapur
+                  district border also on the common point of three Talukas
+                  Madha, Malashiras (both from Solapur district) and Indapur
+                  (Pune district). The temple is the Kuldaivat (Family deity)
+                  for a number of Marathi families of different castes.
+                </p>
+              </div>
+              <div>
+                <p>Location: 175 km from Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Nira_narsinhpur.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear10()">
+          Ramdara Mandir
+        </div>
+        <div id="year10">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                  The main temple is dedicated to lord Shiva and has a huge
+                  Nandi at the entrance,however the beautiful idols of Lord
+                  Rama, Sita maiya, Laxmana & Hanuman in inner shrine made this
+                  place more divine.There is sculptural representation of
+                  'Dasavatharam' by lord Vishnu inside the temple. The temple
+                  was constructed 50-60 years ago.
+                </p>
+              </div>
+              <div>
+                <p>Location: 26 km from Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/religious/Ramdara.jpg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="{% static '/js/index.js' %}"></script>
+    {% endblock %}
+    <footer class="foot" style="margin-top: 16%;">
+      <p>©PRSY</p>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+  </body>
+</html>

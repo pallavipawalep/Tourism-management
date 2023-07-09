@@ -1,0 +1,348 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}" />
+    <title>Other Places</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b71d1092b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="religious-body">
+    {% block content %}
+    <img class="blue-cloud4" src="{% static '/blue_cloud.png' %}" alt="blue cloud">
+    <div>
+      <h1 class="religious-title">Other Places</h1>
+    </div>
+
+    <div class="wrapper" align="center">
+      <div id="authorContainer" class="author-container">
+        <div type="button" class="vertical-line" onclick="showYear1()">
+            Osho Ashram
+        </div>
+        <div id="year1">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    Located in the Koregaon Park in Pune, Osho Ashram was founded by the Rajneesh Chandra Mohan Jain, who is popularly famous as Osho Rajneesh. Also known as, Osho Commune International of Pune, this ashram is spread across an area of 32 acres.
+                </p>
+                <p>
+                    Its lush green campus with its startling natural beauty, offers visitors a much needed break from the pollution of cities and crowds of everyday life. A popular tourist spot in Pune, it attracts visitors with its beautiful landscapes and calm surroundings.
+                </p>
+              </div>
+              <div>
+                <p>Location : Koregaon park pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/osho.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear2()">
+            Raja Dinkar Kelkar Museum
+        </div>
+        <div id="year2">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    As the name suggests, Kelkar Museum was established by Baba Dinkar Kelkar, in the year of 1962. Located in Shukawar Peth, on the Bajirao Road, Raja Dinkar Kelkar Museum is one of the popular sightseeing places in Pune. Presently, it is under the control of the the Department of Archaeology, Government of Maharashtra.
+                </p>
+                <p>
+                    Raja Dinkar Kelkar Museum has a collection of almost 20,000 articles, belonging to different parts of the world, which were collected by Baba Kelkar. He had built this museum in the remembrance of his son, who died at young age of seven. However, currently only 25,000 of the items are on display for public.
+                </p>
+              </div>
+              <div>
+                <p>Location : shukrawar peth pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/kelakar_museum.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear3()">
+            Pashan Lake
+        </div>
+        <div id="year3">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    Pashan Lake is an artificial lake near the suburb of Pashan, situated at a distance of 12 km from the city of Pune. While there are endless places to visit in Pune, Pashan Lake has lured in many bird lovers and photographers from all over India and outside.
+                </p>
+                <p>
+                    The best time to visit the lake is during winter when the lake attracts a huge number of migratory birds.
+                </p>
+              </div>
+              <div>
+                <p>Location: Pashan pune on bangalore mumbai highway.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/pashan_lake.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear4()">
+            Pune Okayama Friendship Garden
+        </div>
+        <div id="year4">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    This is the biggest Japanese garden in the world outside Japan and has also been featured in many Bollywood movies. The garden has become a key attraction in Pune and is also referred to as Pu. La. Deshpande Garden, in fond memory of Pu. La. Deshpande, a renowned Marathi writer.
+                </p>
+                <p>
+                    The garden has beautiful natural landscapes and man-made add-ons that make it look so spectacular. The canal running through the garden is filled with colorful fish and the moon bridge over the canal is a great location to spot the bright orange coloured fish swimming around.
+                </p>
+                <p>
+                    The attractions within the garden include a waterfall, a pond, lanterns, artificial hillocks, and a forest. The landscape of the garden is diverse and as one walks through the serene pathways listening to the rumbling sound of the stream and the chirping of the birds, one can witness the change in the garden landscape. There are Pergolas around this huge garden, where one can sit, relax, and enjoy the tranquility engulfing this place.
+                </p>
+              </div>
+              <div>
+                <p>Location: Sinhagad Road Pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/okayama_garden.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear5()">
+            Rajiv Gandhi Zoological Park
+        </div>
+        <div id="year5">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    Rajiv Gandhi Zoological Park, also known as Katraj Snake Park, is among the popular zoos in India. It is in Katraj, only a few kilometres away from Pune. So, it is a favourite among the local people and others who come to explore Pune.
+                </p>
+                <p>
+                    Rajiv Gandhi Zoological Park is divided into three sections: the zoo, a lake, and a snake park. It also has a wildlife research centre, which serves as an animal orphanage, rescue centre and care centre.
+                </p>
+                <p>
+                    You can visit all these parts and watch the animals being cared for in a protective environment. Among the various animals in Rajiv Gandhi Zoological Park & Wildlife Research Centre are leopards, black bucks and elephants. Then, you will find different species of snakes and other reptiles in the snake park.
+                </p>
+              </div>
+              <div>
+                <p>Location: 6 km from swargate bus stand.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/rajiv_gandhi_zoo.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear6()">
+            Khadakwasla Dam
+        </div>
+        <div id="year6">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    Khadakwasla Dam is a picnic spot on the outskirts of Pune. It forms the Khadakwasla Lake which attracts nature lovers and adventure enthusiasts alike. Local people also visit the lake to enjoy the panoramic sunrise and sunset views it offers.
+                </p>
+                <p>
+                    If you would love to relax on a sunny day under trees, this is the place to visit. You can also enjoy Khadakwasla Dam camping in the nearby areas.
+                </p>
+                <p>
+                    You'll find many food stalls and street hawkers too, near this picnic spot. They sell fast food, local snacks and tea every evening. Therefore, Khadakwasla Dam has also been nicknamed “Pune Chowpatty.”
+                </p>
+              </div>
+              <div>
+                <p>Location: 16 km from pune on singhgad road.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/khadakwasla.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear7()">
+            Pataleshwar Cave
+        </div>
+        <div id="year7">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    Located on the Jangli Maharaj Road, Pataleshwar Cave Temple is devoted to the Lord Pataleshwar, the God of the Underworld. Built in the 8th century, this temple is visited not by religious tourists but by everyone who admires architectural beauty. Amidst the busyness of Jangli Maharaj Road, this temple with its calm atmosphere, offers visitors a much needed respite.
+                </p>
+                <p>
+                    It is said that the Pataleshwar Cave Temple has been carved out from a single rock. It is also dedicated to the Lord Shiva and Nandi. There are also statues of various Hindu Gods and Goddesses such as Goddess Sita, Goddess Lakshmi, Lord Ram, Lord Lakshman, and Lord Ganesh. A majestic shivalingam is also built under its roof, at the main shrine of the temple. This temple has huge pillars, adding on to its magnificence.
+                </p>
+              </div>
+              <div>
+                <p>Location: JM road pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/pataleshwar_caves.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear8()">
+            Fashion Street
+        </div>
+        <div id="year8">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    Fashion Street is a renowned spot for shopping in Pune. It is a street market located in one of the prime locations in the city. Here, one can find a variety of products to suit their requirement.
+                </p>
+                <p>
+                    Fashion Street is often crowded as the prices are extremely affordable. Plus, customers can always bargain. Like most street markets, the shops and the kiosks are placed closed to each other on either side of the street. The narrow lane that remains in the middle of the street is used by the customers who dodge and find a way through the crowd.
+                </p>
+                <p>
+                    Peak hours of the day draw people for shopping in large numbers. One may want to visit Fashion Street a little early to explore it completely.
+                </p>
+              </div>
+              <div>
+                <p>Location: Camp pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/fashion_street_pune.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear9()">
+            FC Road
+        </div>
+        <div id="year9">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    One of the liveliest streets in Pune, Fergusson College Road is a youngster's delight. Located centrally in the ever-expanding city of Pune, FC Road is home to many of city's famous restaurants, street food joints, and street shopping areas.
+                </p>
+                <p>
+                    Proximity to the city's premier educational institutes (Fergusson College, BMCC, Apte College, COEP) and city's residential areas means that this one-way road is always filled with youngsters eager to eat, shop, and hang out.
+                </p>
+                <p>
+                    Though the FC Road region has maintained its Puneri identity in a rapidly changing Pune, some things on it have changed beyond recognition.
+                </p>
+              </div>
+              <div>
+                <p>Location: Centre of pune.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/FC_road.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div type="button" class="vertical-line" onclick="showYear10()">
+            Aga Khan Palace
+        </div>
+        <div id="year10">
+          <div class="row">
+            <div class="col-lg-6 year_info">
+              <div>
+                <p>
+                    The mighty edifice of Aga Khan Palace is situated in Pune and was built by Sultan Muhammed Shah Aga Khan III in the year 1892. It is one of the most important landmarks in Indian history and has been instrumental in many defining moments of India's independence. It was once the site where Mahatma Gandhi, his wife Kasturba Gandhi, as well as Sarojini Naidu and Mahadev Desai were held prisoners.
+                </p>
+                <p>
+                    Aga Khan Palace is well known both for its architectural excellence as well as its historical significance. Spread over a vast land of 19 acres, the palace is now the headquarters of the Gandhi National Memorial society. Here, making khadi is still one of the prime activities.
+                </p>
+              </div>
+              <div>
+                <p>Location: 7 km from shivaji nagar pune in yerwada.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="image2008"
+                src="{% static '/others/agakhan_palace.jpeg' %}"
+                alt="place image"
+              />
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="{% static '/js/index.js' %}"></script>
+    {% endblock %}
+    <footer class="foot">
+      <p>©PRSY</p>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+  </body>
+</html>

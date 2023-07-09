@@ -1,0 +1,319 @@
+.body {
+    font-family: "Nunito", sans-serif;
+    margin: auto;
+    background-color: aliceblue;
+  }
+.top-panel{
+  background-color: #81cef7;
+  transition: 0.2s all;
+  position: absolute;
+  width: 100%;
+  opacity: 0.4;
+  z-index: 99;
+  text-align: center;
+  padding-left: 30%;
+}
+.nav-anchor{
+  color: black;
+  background-color: #fcfcfc;
+  padding: 2%;
+  font-weight: 600;
+  font-size: large;
+}
+.nav-anchor:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #189113;
+}
+  /* .main {
+display: flex;
+height: 100vh;
+width: 100%;
+align-items: center;
+flex-direction: column;
+row-gap: 20px;
+} */
+
+  /* .main_img{
+z-index: -1;
+position: absolute;
+margin-top: 30%;
+margin-left: 73%;
+width: 25%;
+} */
+
+.main_header {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3rem;
+    /* background-color: #5AB9EA;
+padding: 5%;
+margin: 0;
+box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1); */
+  color: aliceblue;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 40px;
+  color: rgb(1, 1, 59);
+}
+
+.search {
+  width: 30%;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+.blue-cloud1{
+  position: absolute;
+  width: 20%;
+  margin-top: 15%;
+}
+.blue-cloud2{
+  position: absolute;
+  width: 20%;
+  margin-left: 70%;
+  margin-top: 20%;
+}
+.blue-cloud3{
+  position: absolute;
+  width: 20%;
+  margin-top: 3%;
+  margin-left: 60%;
+}
+.blue-cloud4{
+  position: absolute;
+  width: 20%;
+  margin-left: 12%;
+  z-index: -1;
+}
+.blue-cloud5{
+  position: absolute;
+  width: 20%;
+  margin-left: 25%;
+}
+
+.exploration {
+  margin-top: 5%;
+  
+}
+
+.contain_app {
+  margin: 4%;
+}
+
+.exploration_header {
+  
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #81cef7;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+.field-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem auto;
+  max-width: 90%;
+}
+
+.field {
+  max-width: 20rem;
+  margin-bottom: 3rem;
+  padding: 4rem 0 4rem 0;
+
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+    /* background-color: #84CEEB; */
+}
+
+.field-anchor {
+  text-decoration: none;
+  color: #81cef7;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6);
+  font-size: 180%;
+  font-weight: 600;
+}
+.field-anchor:hover{
+  color: azure;
+  text-decoration: none;
+}
+
+.religious {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTsKa1c9GG70yK_qutg43AoRAJx6KHUt_xIg&usqp=CAU");
+  width: 100%;
+}
+
+.historical {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6U-EyRWTAHGEQvX3L4bhd1QLkPScI7fVwFw&usqp=CAU");
+  width: 50%;
+}
+
+.hillStation {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8KR3McStmTx1culHXYFvSN1kbI97VIUbT8w&usqp=CAU");
+  width: 50%;
+}
+
+.other {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS40Zi2R37Nr4VI4IzB6ij-rYpSxWpRgsTLJg&usqp=CAU");
+  width: 50%;
+}
+
+#divHeadIt {
+  position: absolute;
+  padding-top: 150px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9;
+  background-color: transparent;
+}
+
+.divHeadNew {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+.divHeadImg {
+  text-align: center;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+  /* ML card */
+
+.contain{
+  display: flex;
+  margin-top: 8%;
+  margin-left: 30%;
+  text-align: center;
+}
+.card{
+  background-color:#81cef7;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  width: 50%;
+}
+.card .card-title{
+  color: #28a745;
+  font-weight: bolder;
+  margin-bottom: 15%;
+}
+  
+.card .mb-3{
+  color: #575A89;
+  font-weight: 500;
+}
+.btn{
+  background-color:  #28a745;
+  color:white;
+  border: 1px solid #007bff;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 7%;
+}
+  
+.btn:hover{
+  background-color:#DED8F8;
+  color: #575A89;
+  border: 1px solid #575A89;
+}
+  
+.reset_btn{
+  margin-top: 2%;
+}
+
+.reccomend{
+  color: #189113;
+  font-weight: 500;
+}
+
+.foot{
+  background-color: #81cef7;
+  text-align: center;
+  margin-top: 5%;
+}
+
+  /* element.style {
+background: url(https://www.trawell.in/admin/images/thumbs/080966819Lonavala_Main_thumb.jpg) no-repeat scroll center center;
+background-size: cover;
+} */
+
+
+/* religious.html */
+
+.religious-body{
+    background-color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.religious-title{
+    font-weight: 800;
+    color: #81cef7;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+.year_info{
+    padding: 4%;
+    font-weight: bold;
+    font-size: large;
+}
+.vertical-line{
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+    width: 40%;
+    background-color: #81cef7;
+    border-radius: 15px;
+    border: 1px #189113 solid;
+}
+.wrapper{
+  margin-bottom: 10%;
+}
+.vertical-line:hover{
+    background-color: #DED8F8;
+    border-radius: 15px;
+    color: #575A89;
+    border: 1px solid #575A89;
+}
+
+.image2008{
+    width: 50%;
+    transition: 0.5s all ease-in-out;
+    border: #81cef7 6px solid;
+    padding: 1%;
+}
+.image2008:hover{
+    transform: scale(1.12);
+}
+
+#year1, #year2, #year3, #year4, #year5, #year6, #year7, #year8, #year9, #year10{
+    padding: 2% 0 5% 12%;
+    display: none;
+}
+
+
+
+.row{
+    width: 100%;
+}
+
+
+
+@media (max-width: 991.20px){
+    h1{
+        font-size: 40px ;
+    }
+}

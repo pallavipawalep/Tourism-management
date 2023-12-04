@@ -6,6 +6,9 @@ Landing on the home page, it shows a navigation panel to navigate through the 3 
 1st space, 'Exploration point' has 4 fields, namely:- Religious, Historical, Hill station, Others; for users to surf categorically through the tourism places in Pune.
 ![image](https://github.com/pallavipawalep/Tourism-management/assets/120124794/6075e749-b8b9-46ff-963b-598d13525dd8)
 
+suppose we get into the field 'Historical', it shows historical places in Pune, with an image and info about the place:
+![image](https://github.com/pallavipawalep/Tourism-management/assets/120124794/5a7bf136-71c8-44b5-a914-c2e0e8565fb8)
+
 2nd space is a Canva video made by us.
 ![image](https://github.com/pallavipawalep/Tourism-management/assets/120124794/725d26e4-e609-49ba-ac61-371624ae97df)
 ![image](https://github.com/pallavipawalep/Tourism-management/assets/120124794/43c8e975-191e-4cdb-9e99-95d4db4dad79)
